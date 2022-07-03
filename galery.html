@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>galeri</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://use.fontawesome.com/releases/v5.0.4/css/all.css"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="images/logorumahkita-1.png">
+    <link rel="stylesheet" href="style/galery.css" />
+    <link rel="stylesheet" href="style/akun.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"
+      integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  </head>
+    <link
+      rel="stylesheet"
+      href="bootstrap-5.2.0-beta1-dist/js/bootstrap.bundle.min.js"
+    />
+    <!-- Navbar -->
+    <nav class="navbar navbar-default navbar-trans navbar-expand-lg fixed-top">
+      <div class="container">
+        <button
+          class="navbar-toggler collapsed"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarDefault"
+          aria-controls="navbarDefault"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <a class="navbar-brand text-brand text-dark" href="index.html"
+          >Rumah<span>Kita</span></a
+        >
+        <div
+          class="navbar-collapse collapse justify-content-center"
+          id="navbarDefault"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html">Home</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="aboutus.html">About</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="Properti.html">Property</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="blog.html">Blog</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="galery.html">Galery</a>
+            </li>
+
+            
+            <li class="nav-item">
+              <a
+                class="btn"
+                data-bs-toggle="modal"
+                href="#exampleModalToggle"
+                role="button"
+                >login/signup</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- akhir navbar -->
+
+    <!-- Daftar dan Masuk-->
+    <!-- Daftar -->
+    <div
+      class="modal fade"
+      id="exampleModalToggle"
+      aria-hidden="true"
+      aria-labelledby="exampleModalToggleLabel"
+      tabindex="-1"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalToggleLabel">Daftar</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form action="">
+              <input type="text" placeholder="Nama Depan" />
+              <input type="text" placeholder="Nama Belakang" />
+              <input type="text" class="form-panjang" placeholder="Email" />
+              <input
+                type="password"
+                class="form-panjang"
+                placeholder="Password"
+              />
+              <input
+                type="password"
+                class="form-panjang"
+                placeholder="Confirm Password"
+              />
+              <button href="#">Daftar</button>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <a
+              class="punya-akun"
+              data-bs-target="#exampleModalToggle2"
+              data-bs-toggle="modal"
+              data-bs-dismiss="modal"
+              >Sudah punya akun?</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Akhir Daftar -->
+    <!-- Masuk -->
+    <div
+      class="modal fade"
+      id="exampleModalToggle2"
+      aria-hidden="true"
+      aria-labelledby="exampleModalToggleLabel2"
+      tabindex="-1"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalToggleLabel2">Masuk</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form action="">
+              <input type="text" class="form-panjang" placeholder="Email" />
+              <input
+                type="password"
+                class="form-panjang"
+                placeholder="Password"
+              />
+              <button href="#">Masuk</button>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <a
+              href=""
+              data-bs-target="#exampleModalToggle"
+              data-bs-toggle="modal"
+              data-bs-dismiss="modal"
+              >Belum Punya Akun?</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Akhir Masuk -->
+
+    <!-- galery -->
+    <div class="konten">
+      <div class="row d-flex flex-wrap">
+        <div class="column">
+          <img
+            src="images/pic17.jpg"
+            alt="pexels-elly-fairytale-3822719"
+            border="0"
+            class="thumb"
+          />
+          <img src="images/pic2.jpg" alt="" style="width: 100%" class="thumb" />
+          <img
+            src="images/pic3.jpg"
+            alt="pexels-pixabay-416809"
+            border="0"
+            class="thumb"
+          />
+          <img src="images/pic4.jpg" alt="club1" border="0" class="thumb" />
+          <img
+            src="images/pic7.jpg"
+            alt="group-of-young-people-running-on-treadmills-in-modern-sport-gym"
+            border="0"
+            class="thumb"
+          />
+        </div>
+        <div class="column">
+          <img src="images/pic5.webp" alt="club4" border="0" class="thumb" />
+          <img
+            src="images/pic14.jpg"
+            alt="pexels-leon-ardho-1717097"
+            border="0"
+            class="thumb"
+          />
+          <img src="images/pic11.jpg" alt="course" border="0" class="thumb" />
+          <img
+            src="images/pic9.png"
+            alt="pexels-leon-ardho-1552248"
+            border="0"
+            class="thumb"
+          />
+          <img
+            src="images/pic8.jpg"
+            alt="zumba4-1-1"
+            border="0"
+            class="thumb"
+          />
+        </div>
+        <div class="column">
+          <img src="images/pic1.jpg" alt="zumba6" border="0" class="thumb" />
+          <img src="images/pic12.jpg" alt="zumba5" border="0" class="thumb" />
+          <img src="images/pic6.jpg" alt="" style="width: 100%" class="thumb" />
+          <img src="images/pic15.jpg" alt="club6" border="0" class="thumb" />
+          <img
+            src="images/pic16.jpg"
+            alt=""
+            style="width: 100%"
+            class="thumb"
+          />
+          <img src="images/pic10.webp" alt="zumba1" border="0" class="thumb" />
+        </div>
+        <div class="column">
+          <img src="images/pic18.jpg" style="width: 100%" class="thumb" />
+          <img
+            src="images/pic19.jpg"
+            alt="terhindar-ciera"
+            border="0"
+            class="thumb"
+          />
+          <img
+            src="images/pic20.jpg"
+            alt=""
+            style="width: 100%"
+            class="thumb"
+          />
+          <img
+            src="images/pic21.jpg"
+            alt=""
+            style="width: 100%"
+            class="thumb"
+          />
+          <img
+            src="images/pic13.jpg"
+            alt="pexels-mister-mister-3490348"
+            border="0"
+            class="thumb"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- akhir galeri -->
+
+    <!-- Footer-->
+    <footer
+      class="text-center text-lg-start text-dark"
+      style="background-color: #eceff1"
+    >
+      <section
+        class="d-flex justify-content-between p-4 text-white"
+        style="background-color: #21d192"
+      >
+        <div class="me-5">
+          <span>Get connected with us on social networks:</span>
+        </div>
+        <div>
+          <a href="" class="text-white me-4">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </div>
+      </section>
+      <section class="list">
+        <div class="container text-center text-md-start mt-5">
+          <div class="row mt-3">
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+              <h6 class="text-uppercase fw-bold">Rumah Kita</h6>
+              <hr
+                class="mb-4 mt-0 d-inline-block mx-auto"
+                style="width: 60px; background-color: #7c4dff; height: 2px"
+              />
+              <p>Teman mencari rumah impianmu</p>
+            </div>
+            <div class="list col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+              <h6 class="text-uppercase fw-bold">Properti</h6>
+              <hr
+                class="mb-4 mt-0 d-inline-block mx-auto"
+                style="width: 60px; background-color: #7c4dff; height: 2px"
+              />
+              <p><i></i> Beli</p>
+              <p><i></i> Sewa</p>
+            </div>
+            <div
+              class="list col-md-3 col-lg-2 col-xl-2 mx-auto mb-4 text-decoration-none"
+            >
+              <h6 class="text-uppercase fw-bold">Menu</h6>
+              <hr
+                class="mb-4 mt-0 d-inline-block mx-auto"
+                style="width: 60px; background-color: #7c4dff; height: 2px"
+              />
+              <p>
+                <a href="index.html" class="text-dark">Home</a>
+              </p>
+              <p>
+                <a href="galery.html" class="text-dark">Galeri</a>
+              </p>
+              <p>
+                <a href="aboutus.html" class="text-dark">About</a>
+              </p>
+              <p>
+                <a href="Properti.html" class="text-dark">Properti</a>
+              </p>
+            </div>
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+              <h6 class="text-uppercase fw-bold">Contact</h6>
+              <hr
+                class="mb-4 mt-0 d-inline-block mx-auto"
+                style="width: 60px; background-color: #7c4dff; height: 2px"
+              />
+              <p><i class="fas fa-home mr-3"></i> Pabelan Surakarta</p>
+              <p><i class="fas fa-envelope mr-3"></i> rumahkita@gmail.com</p>
+              <p><i class="fas fa-phone mr-3"></i> 0271 5555 5555</p>
+              <p><i class="fas fa-print mr-3"></i> 0271 5555 5555</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="text-center p-3" style="background-color: #21d192">
+        © 2022 Copyright
+        <p class="text-dark">
+          All rights reserved | This template is made by Rado N S Situmorang
+          (K3521060) & Melati Nurmala Sari(K3521042)
+        </p>
+      </div>
+    </footer>
+    <!-- akhir footer-->
+    <script src="jquery/script.js"></script>
+  </body>
+</html>

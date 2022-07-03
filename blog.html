@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>blog</title>
+    <link
+      rel="stylesheet"
+      href="bootstrap-5.2.0-beta1-dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="style/blog.css" />
+    <link
+      href="https://use.fontawesome.com/releases/v5.0.4/css/all.css"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="images/logorumahkita-1.png" />
+    <link rel="stylesheet" href="style/akun.css" />
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="bootstrap-5.2.0-beta1-dist/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <link
+      rel="stylesheet"
+      href="bootstrap-5.2.0-beta1-dist/js/bootstrap.bundle.min.js"
+    />
+    <!-- Navbar -->
+    <nav class="navbar navbar-default navbar-trans navbar-expand-lg fixed-top">
+      <div class="container">
+        <button
+          class="navbar-toggler collapsed"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarDefault"
+          aria-controls="navbarDefault"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <a class="navbar-brand text-brand" href="index.html"
+          >Rumah<span>Kita</span></a
+        >
+        <div
+          class="navbar-collapse collapse justify-content-center"
+          id="navbarDefault"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" href="index.html">Home</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="aboutus.html">About</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="Properti.html">Property</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="blog.html">Blog</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="galery.html">Galery</a>
+            </li>
+
+            <li class="nav-item">
+              <a
+                class="btn"
+                data-bs-toggle="modal"
+                href="#exampleModalToggle"
+                role="button"
+                >login/signup</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- akhir navbar -->
+
+    <!-- Daftar dan Masuk-->
+    <!-- Daftar -->
+    <div
+      class="modal fade"
+      id="exampleModalToggle"
+      aria-hidden="true"
+      aria-labelledby="exampleModalToggleLabel"
+      tabindex="-1"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalToggleLabel">Daftar</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form action="">
+              <input type="text" placeholder="Nama Depan" />
+              <input type="text" placeholder="Nama Belakang" />
+              <input type="text" class="form-panjang" placeholder="Email" />
+              <input
+                type="password"
+                class="form-panjang"
+                placeholder="Password"
+              />
+              <input
+                type="password"
+                class="form-panjang"
+                placeholder="Confirm Password"
+              />
+              <button href="#">Daftar</button>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <a
+              class="punya-akun"
+              data-bs-target="#exampleModalToggle2"
+              data-bs-toggle="modal"
+              data-bs-dismiss="modal"
+              >Sudah punya akun?</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Akhir Daftar -->
+    <!-- Masuk -->
+    <div
+      class="modal fade"
+      id="exampleModalToggle2"
+      aria-hidden="true"
+      aria-labelledby="exampleModalToggleLabel2"
+      tabindex="-1"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalToggleLabel2">Masuk</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form action="">
+              <input type="text" class="form-panjang" placeholder="Email" />
+              <input
+                type="password"
+                class="form-panjang"
+                placeholder="Password"
+              />
+              <button href="#">Masuk</button>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <a
+              href=""
+              data-bs-target="#exampleModalToggle"
+              data-bs-toggle="modal"
+              data-bs-dismiss="modal"
+              >Belum Punya Akun?</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Akhir Masuk -->
+
+    <!-- blog-->
+    <div class="container blog-page">
+      <div class="row">
+        <div class="col-lg-4 col-md-12">
+          <div class="card single_post">
+            <div class="header">
+              <h2><strong>Latest</strong> Post</h2>
+            </div>
+            <div class="body">
+              <h3 class="m-t-0 m-b-5">
+                <a>Pentingnya Surat kelengkapan rumah</a>
+              </h3>
+              <ul class="meta">
+                <li>
+                  <a>
+                    <i class="zmdi zmdi-account col-blue"></i>Posted By: Joko</a
+                  >
+                </li>
+                <li>
+                  <a><i class="zmdi zmdi-label col-amber"></i>Property</a>
+                </li>
+                <li>
+                  <a
+                    ><i class="zmdi zmdi-comment-text col-blue"></i>Comments:
+                    3</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="body">
+              <div class="img-post m-b-15">
+                <img src="images/blog1.jpg" alt="Awesome Image" />
+                <div class="social_share">
+                  <button
+                    class="btn btn-primary btn-icon btn-icon-mini btn-round"
+                  >
+                    <i class="zmdi zmdi-facebook"></i>
+                  </button>
+                  <button
+                    class="btn btn-primary btn-icon btn-icon-mini btn-round"
+                  >
+                    <i class="zmdi zmdi-twitter"></i>
+                  </button>
+                  <button
+                    class="btn btn-primary btn-icon btn-icon-mini btn-round"
+                  >
+                    <i class="zmdi zmdi-instagram"></i>
+                  </button>
+                </div>
+              </div>
+              <p>
+                Kelengkapan surat tanah dan rumah sangatlah penting dijaman
+                sekarang dimana banyak penipuan terjadi dimana mana jika tidak
+                ada mari kita urus
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-12">
+          <div class="card single_post">
+            <div class="header">
+              <h2><strong>Popular</strong> Post</h2>
+            </div>
+            <div class="body">
+              <h3 class="m-t-0 m-b-5">
+                <a>Pekerja lapangan modern</a>
+              </h3>
+              <ul class="meta">
+                <li>
+                  <a
+                    ><i class="zmdi zmdi-account col-blue"></i>Posted By:
+                    Anwar</a
+                  >
+                </li>
+                <li>
+                  <a><i class="zmdi zmdi-label col-amber"></i>Property</a>
+                </li>
+                <li>
+                  <a
+                    ><i class="zmdi zmdi-comment-text col-blue"></i>Comments:
+                    1</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="body">
+              <div class="img-post m-b-15">
+                <img src="images/blog3.jpg" alt="Awesome Image" />
+                <div class="social_share">
+                  <button
+                    class="btn btn-primary btn-icon btn-icon-mini btn-round"
+                  >
+                    <i class="zmdi zmdi-facebook"></i>
+                  </button>
+                  <button
+                    class="btn btn-primary btn-icon btn-icon-mini btn-round"
+                  >
+                    <i class="zmdi zmdi-twitter"></i>
+                  </button>
+                  <button
+                    class="btn btn-primary btn-icon btn-icon-mini btn-round"
+                  >
+                    <i class="zmdi zmdi-instagram"></i>
+                  </button>
+                </div>
+              </div>
+              <p>
+                kemudahan pagi para pekerja lapangan sekarang adalah banyaknya
+                alat modern yang dapat meningkatkan kemudaan bagi pekerjaan yang
+                berat dan pekerjaan bisa lebih praktis dan tentunya memakan
+                waktu sedikit
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-12">
+          <div class="card single_post">
+            <div class="header">
+              <h2><strong>Most</strong> View</h2>
+            </div>
+            <div class="body">
+              <h3 class="m-t-0 m-b-5">
+                <a>Perumahan modern</a>
+              </h3>
+              <ul class="meta">
+                <li>
+                  <a
+                    ><i class="zmdi zmdi-account col-blue"></i>Posted By:
+                    mika</a
+                  >
+                </li>
+                <li>
+                  <a><i class="zmdi zmdi-label col-amber"></i>Property</a>
+                </li>
+                <li>
+                  <a
+                    ><i class="zmdi zmdi-comment-text col-blue"></i>Comments:
+                    2</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="body">
+              <div class="img-post m-b-15">
+                <img src="images/blog5.jpg" alt="Awesome Image" />
+                <div class="social_share">
+                  <button
+                    class="btn btn-primary btn-icon btn-icon-mini btn-round"
+                  >
+                    <i class="zmdi zmdi-facebook"></i>
+                  </button>
+                  <button
+                    class="btn btn-primary btn-icon btn-icon-mini btn-round"
+                  >
+                    <i class="zmdi zmdi-twitter"></i>
+                  </button>
+                  <button
+                    class="btn btn-primary btn-icon btn-icon-mini btn-round"
+                  >
+                    <i class="zmdi zmdi-instagram"></i>
+                  </button>
+                </div>
+              </div>
+              <p>
+                Perumahan modern sudah semakin banyak di indonesia mulai dari
+                furniture yang lengkap hingga memiliki fitur-fitur canggih yang
+                bernama smart home semua serba praktis
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="main-content" class="blog-page">
+      <div class="container">
+        <div class="row clearfix">
+          <div class="col-lg-8 col-md-12 left-box">
+            <div class="card single_post">
+              <div class="body">
+                <div class="img-post">
+                  <img
+                    class="d-block img-fluid"
+                    src="images/Hero@2x-1024x467.png"
+                    alt="First slide"
+                  />
+                </div>
+                <h3><a>Sercice Property</a></h3>
+                <p>
+                  Selain menjual rumah start up property harus bisa menjangkau
+                  peminatnya dengan cara memberikan service yang baik dengan
+                  harga menarik
+                </p>
+              </div>
+            </div>
+          </div>
+          <div id="main-content" class="blog-page">
+            <div class="container">
+              <div class="row clearfix">
+                <div class="col-lg-8 col-md-12 left-box">
+                  <div class="card single_post">
+                    <div class="body">
+                      <div class="img-post">
+                        <img
+                          class="d-block img-fluid"
+                          src="images/blog6.jpg"
+                          alt="First slide"
+                        />
+                      </div>
+                      <h3><a>Pentingnya Investasi Property</a></h3>
+                      <p>
+                        Selain sebagai tempat tinggal rumah juga bisa menajadi
+                        sarana Investasi melihat pupulasi manusia yang bertambah
+                        juga membutuhkan tempat untuk tinggal
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- akhir dari blog-->
+
+    <!-- Footer-->
+    <footer
+      class="text-center text-lg-start text-dark"
+      style="background-color: #eceff1"
+    >
+      <section
+        class="d-flex justify-content-between p-4 text-white"
+        style="background-color: #21d192"
+      >
+        <div class="me-5">
+          <span>Get connected with us on social networks:</span>
+        </div>
+        <div>
+          <a href="" class="text-white me-4">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </div>
+      </section>
+      <section class="list">
+        <div class="container text-center text-md-start mt-5">
+          <div class="row mt-3">
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+              <h6 class="text-uppercase fw-bold">Rumah Kita</h6>
+              <hr
+                class="mb-4 mt-0 d-inline-block mx-auto"
+                style="width: 60px; background-color: #7c4dff; height: 2px"
+              />
+              <p>Teman mencari rumah impianmu</p>
+            </div>
+            <div class="list col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+              <h6 class="text-uppercase fw-bold">Properti</h6>
+              <hr
+                class="mb-4 mt-0 d-inline-block mx-auto"
+                style="width: 60px; background-color: #7c4dff; height: 2px"
+              />
+              <p><i></i> Beli</p>
+              <p><i></i> Sewa</p>
+            </div>
+            <div
+              class="list col-md-3 col-lg-2 col-xl-2 mx-auto mb-4 text-decoration-none"
+            >
+              <h6 class="text-uppercase fw-bold">Menu</h6>
+              <hr
+                class="mb-4 mt-0 d-inline-block mx-auto"
+                style="width: 60px; background-color: #7c4dff; height: 2px"
+              />
+              <p>
+                <a href="index.html" class="text-dark">Home</a>
+              </p>
+              <p>
+                <a href="galery.html" class="text-dark">Galeri</a>
+              </p>
+              <p>
+                <a href="aboutus.html" class="text-dark">About</a>
+              </p>
+              <p>
+                <a href="" class="text-dark">Properti</a>
+              </p>
+            </div>
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+              <h6 class="text-uppercase fw-bold">Contact</h6>
+              <hr
+                class="mb-4 mt-0 d-inline-block mx-auto"
+                style="width: 60px; background-color: #7c4dff; height: 2px"
+              />
+              <p><i class="fas fa-home mr-3"></i> Pabelan Surakarta</p>
+              <p><i class="fas fa-envelope mr-3"></i> rumahkita@gmail.com</p>
+              <p><i class="fas fa-phone mr-3"></i> 0271 5555 5555</p>
+              <p><i class="fas fa-print mr-3"></i> 0271 5555 5555</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="text-center p-3" style="background-color: #21d192">
+        © 2022 Copyright
+        <p class="text-dark">
+          All rights reserved | This template is made by Rado N S Situmorang
+          (K3521060) & Melati Nurmala Sari(K3521042)
+        </p>
+      </div>
+    </footer>
+    <!-- akhir footer-->
+  </body>
+</html>
